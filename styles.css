@@ -1,6 +1,6 @@
 body {
-    /* Gradient from black (#000) to midnight blue (#191970) */
-    background: linear-gradient(135deg, #000 0%, #191970 100%);
+    /* Gradient from black (#000000) to #04619F */
+    background: linear-gradient(135deg, #000000 0%, #04619F 100%);
     min-height: 100vh;
     margin: 0;
 }
