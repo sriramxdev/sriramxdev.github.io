@@ -1,6 +1,13 @@
+.zen-tokyo-zoo-regular {
+  font-family: "Zen Tokyo Zoo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
   font-family: 'Monoton', cursive;
+  background-color: #4834d4;
+  background-image: linear-gradient(to bottom, #4834d4 0%, #0c0c0c 74%);
 }
 .monoton {
   font-family: 'Monoton', cursive;
