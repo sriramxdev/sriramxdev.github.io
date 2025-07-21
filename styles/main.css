@@ -55,6 +55,35 @@ body {
   }
 }
 
+/* Glassmorphism for contact card */
+.glass-card {
+  background: rgba(30, 41, 59, 0.55);
+  border-radius: 0.75rem;
+  border: 1.5px solid rgba(255,255,255,0.18);
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transition: opacity 0.2s, transform 0.2s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Show card on hover */
+.group:hover .contact-card,
+.group:focus-within .contact-card {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Hide card by default */
+.contact-card {
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
 .zen-tokyo-zoo-regular {
   font-family: "Zen Tokyo Zoo", system-ui;
   font-weight: 400;

@@ -21,7 +21,25 @@
       <li><a href="#" class="nav-link text-xs sm:text-base">About</a></li>
       <li><a href="#" class="nav-link text-xs sm:text-base">Services</a></li>
       <li><a href="#" class="nav-link text-xs sm:text-base">Portfolio</a></li>
-      <li><a href="#" class="nav-link text-xs sm:text-base">Contact</a></li>
+      <li class="relative group">
+        <a href="#" class="nav-link text-xs sm:text-base">Contact</a>
+        <!-- Dropdown Card -->
+        <div class="contact-card absolute left-1/2 -translate-x-1/2 mt-2 min-w-[220px] sm:min-w-[260px] max-w-xs px-4 py-4 rounded-xl shadow-xl glass-card hidden group-hover:flex flex-col items-center z-40">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile" class="w-16 h-16 rounded-full mb-2 border-2 border-white/40 shadow">
+          <div class="text-white font-semibold text-base mb-1">Sriram Dev</div>
+          <div class="text-white text-xs text-center mb-2">Web Developer & Designer<br>Building creative digital experiences.</div>
+          <div class="flex flex-col gap-2 w-full">
+            <a href="mailto:sample@email.com" class="flex items-center gap-2 text-blue-200 hover:text-blue-400 transition text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+              sample@email.com
+            </a>
+            <a href="https://linkedin.com/in/sample" target="_blank" class="flex items-center gap-2 text-blue-200 hover:text-blue-400 transition text-sm">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.93-2-2-2s-2 .93-2 2v4.5h-3v-9h3v1.22c.41-.63 1.36-1.22 2.25-1.22 1.93 0 3.75 1.57 3.75 4.5v4.5z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </li>
     </ul>
   </nav>
 </body>
