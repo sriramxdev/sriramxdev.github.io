@@ -14,6 +14,16 @@ body {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   min-width: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for nav on mobile */
+.glass-navbar::-webkit-scrollbar {
+  display: none;
+}
+.glass-navbar {
+  scrollbar-width: none;
 }
 
 /* Navbar link styles */
