@@ -119,12 +119,14 @@ body {
 
 /* Glassmorphism for paragraph box */
 .glass-paragraph {
-  background: rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.16);
   border-radius: 1rem;
   border: 1.5px solid rgba(255,255,255,0.22);
   box-shadow: 0 4px 24px 0 rgba(0,0,0,0.12);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
   min-width: 0;
 }
 
