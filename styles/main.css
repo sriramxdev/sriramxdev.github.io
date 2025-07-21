@@ -90,3 +90,21 @@ body {
   opacity: 1;
   box-shadow: 0 2px 8px 0 rgba(255, 60, 0, 0.4);
 }
+
+/* Fade-in animation for profile image and message */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(24px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.fade-in-img {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.fade-in-msg {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1.5s;
+}
