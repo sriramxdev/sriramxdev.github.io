@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Quasandra XC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Fonts: Zen Tokyo Zoo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,11 +11,12 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="flex flex-col items-center justify-start min-h-screen">
-  <h1 class="zen-tokyo-zoo-regular text-white text-3xl sm:text-4xl mt-6 sm:mt-8 text-center px-2">Quasandra XC</h1>
-  <!-- Sticky Glassmorphic Navbar -->
-  <nav class="sticky top-0 z-30 flex justify-center mt-4 sm:mt-6 w-full sm:w-[98%] px-1 sm:mx-auto">
-    <ul class="glass-navbar flex w-full justify-between px-2 sm:px-8 py-1 sm:py-2 rounded-md flex-wrap">
+<body class="flex flex-col items-center justify-start min-h-screen pt-8 sm:pt-12">
+  <!-- Progress bar -->
+  <div id="progress-bar"></div>
+  <!-- Notch-style Glassmorphic Navbar -->
+  <nav class="fixed top-0 left-1/2 transform -translate-x-1/2 z-30 w-[99vw] sm:w-[900px] px-0">
+    <ul class="glass-navbar flex w-full justify-between px-2 sm:px-8 py-1 sm:py-2">
       <li><a href="#" class="nav-link text-xs sm:text-base">Home</a></li>
       <li><a href="#" class="nav-link text-xs sm:text-base">Hall Of Fame</a></li>
       <li><a href="#" class="nav-link text-xs sm:text-base">Projects</a></li>
@@ -25,5 +25,6 @@
       <li><a href="#" class="nav-link text-xs sm:text-base">Contact</a></li>
     </ul>
   </nav>
+  <script src="scripts/progress-bar.js"></script>
 </body>
 </html>
