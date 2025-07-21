@@ -96,15 +96,23 @@ body {
   from { opacity: 0; transform: translateY(24px);}
   to { opacity: 1; transform: translateY(0);}
 }
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; -webkit-transform: translateY(24px);}
+  to { opacity: 1; -webkit-transform: translateY(0);}
+}
 
 .fade-in-img {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
   animation-delay: 0.5s;
+  -webkit-animation: fadeIn 1s ease forwards;
+  -webkit-animation-delay: 0.5s;
 }
 
 .fade-in-msg {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
   animation-delay: 1.5s;
+  -webkit-animation: fadeIn 1s ease forwards;
+  -webkit-animation-delay: 1.5s;
 }
