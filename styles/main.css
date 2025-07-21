@@ -66,6 +66,18 @@ body {
   transition: opacity 0.2s, transform 0.2s;
   opacity: 0;
   pointer-events: none;
+  max-width: 90vw;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+/* Hide card by default */
+.contact-card {
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  overflow-x: auto;
+  max-width: calc(100vw - 2rem);
 }
 
 /* Show card on hover */
@@ -77,11 +89,13 @@ body {
   transform: translateY(0);
 }
 
-/* Hide card by default */
-.contact-card {
-  display: none;
-  opacity: 0;
-  transform: translateY(-10px);
+/* Responsive: prevent overflow on small screens */
+@media (max-width: 640px) {
+  .contact-card {
+    min-width: 200px;
+    max-width: 95vw;
+    /* Remove left/right overrides */
+  }
 }
 
 .zen-tokyo-zoo-regular {
