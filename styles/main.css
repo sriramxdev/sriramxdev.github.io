@@ -1,19 +1,43 @@
-.zen-tokyo-zoo-regular {
-  font-family: "Zen Tokyo Zoo", system-ui;
-  font-weight: 400;
-  font-style: normal;
+body {
+  background-image: url(bg4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
-body {
-  font-family: 'Monoton', cursive;
-  background-color: #4834d4;
-  background-image: linear-gradient(to bottom, #4834d4 0%, #0c0c0c 74%);
+/* Glassmorphism for navbar */
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 0.5rem; /* reduced from 1rem */
+  border: 1.5px solid rgba(255,255,255,0.25);
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
-.monoton {
-  font-family: 'Monoton', cursive;
+
+/* Navbar link styles */
+.nav-link {
+  color: #fff;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.375rem; /* reduced from 0.75rem */
+  transition: box-shadow 0.2s, color 0.2s;
+  text-shadow: 0 1px 8px rgba(80, 120, 255, 0.18);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  position: relative;
+  z-index: 1;
 }
-.monoton-regular {
-  font-family: "Monoton", sans-serif;
+
+.nav-link:hover, .nav-link:focus {
+  color: #e0e7ff;
+  box-shadow: 0 0 12px 2px #7f9cf5, 0 0 24px 4px #6366f1;
+  background: rgba(120, 120, 255, 0.08);
+  outline: none;
+}
+
+.zen-tokyo-zoo-regular {
+  font-family: "Zen Tokyo Zoo", system-ui;
   font-weight: 400;
   font-style: normal;
 }
