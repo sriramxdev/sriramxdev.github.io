@@ -10,16 +10,7 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles/main.css">
-  <script>
-    // Preload only the required background image
-    const w = window.screen.width;
-    const bg = w >= 2560 ? "bg5_4k.jpg" : "bg5_2k.jpg";
-    const preload = document.createElement('link');
-    preload.rel = 'preload';
-    preload.as = 'image';
-    preload.href = bg;
-    document.head.appendChild(preload);
-  </script>
+  <script src="scripts/preload-bg.js"></script>
 </head>
 <body class="flex flex-col min-h-screen pt-8 sm:pt-12">
   <!-- Progress bar -->
@@ -57,12 +48,7 @@
   </div>
   <script src="scripts/progress-bar.js"></script>
   <script src="scripts/typing-init.js"></script>
-  <script>
-    // Set background image based on screen size
-    const w = window.screen.width;
-    const bg = w >= 2560 ? "bg5_4k.jpg" : "bg5_2k.jpg";
-    document.body.style.backgroundImage = `url('${bg}')`;
-  </script>
+  <script src="scripts/set-bg.js"></script>
   <footer class="w-full py-6 bg-black/60 text-white flex flex-col items-center">
     <div class="flex gap-6 mb-2">
       <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-blue-400 transition">
