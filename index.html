@@ -10,6 +10,16 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles/main.css">
+  <script>
+    // Preload only the required background image
+    const w = window.screen.width;
+    const bg = w >= 2560 ? "bg5_4k.jpg" : "bg5_2k.jpg";
+    const preload = document.createElement('link');
+    preload.rel = 'preload';
+    preload.as = 'image';
+    preload.href = bg;
+    document.head.appendChild(preload);
+  </script>
 </head>
 <body class="flex flex-col min-h-screen pt-8 sm:pt-12">
   <!-- Progress bar -->
@@ -28,8 +38,9 @@
   <!-- Profile image and welcome message -->
   <div class="flex flex-col items-center w-full mt-24 sm:mt-28 flex-1 mb-2">
     <img id="profile-img" src="Sv.jpg" alt="Profile" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-lg mx-auto fade-in-img" />
-    <h2 id="welcome-msg" class="text-3xl sm:text-5xl font-bold text-center mt-6 fade-in-msg bg-gradient-to-r from-blue-400 via-pink-400 to-orange-400 bg-clip-text text-transparent">
-      Welcome to Quasandra XC!
+    <h2 id="welcome-msg" class="text-3xl sm:text-5xl font-bold text-center mt-6 bg-gradient-to-r from-blue-400 via-pink-400 to-orange-400 bg-clip-text text-transparent typing">
+      <span class="inline-block overflow-hidden whitespace-nowrap border-r-0 w-0 animate-[typing_1.2s_steps(24,end)_forwards]">Welcome to Quasandra XC!</span>
+      <span class="inline-block animate-[blink-cursor_1s_steps(1)_infinite]">|</span>
     </h2>
     <div class="glass-paragraph w-full max-w-[90vw] mt-8 px-4 py-6 rounded-xl fade-in-paragraph mx-auto">
       <p class="italic text-lg sm:text-xl text-center text-white break-normal whitespace-normal">
@@ -45,6 +56,13 @@
     </div>
   </div>
   <script src="scripts/progress-bar.js"></script>
+  <script src="scripts/typing-init.js"></script>
+  <script>
+    // Set background image based on screen size
+    const w = window.screen.width;
+    const bg = w >= 2560 ? "bg5_4k.jpg" : "bg5_2k.jpg";
+    document.body.style.backgroundImage = `url('${bg}')`;
+  </script>
   <footer class="w-full py-6 bg-black/60 text-white flex flex-col items-center">
     <div class="flex gap-6 mb-2">
       <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-blue-400 transition">
@@ -60,10 +78,10 @@
     </div>
     <div class="text-xs text-center mb-2">
       <span>Contact: <a href="mailto:your@email.com" class="underline hover:text-blue-300">your@email.com</a></span>
-    </div>
-    <div class="text-xs text-center">
+      <span>Contact: <a href="mailto:your@email.com" class="underline hover:text-blue-300">your@email.com</a></span>
+    </div>lass="text-xs text-center">
+    <div class="text-xs text-center">ights reserved.
       &copy; 2024 Quasandra XC. All rights reserved.
-    </div>
+    </div>>
   </footer>
-</body>
-</html>
+</body></html>
